@@ -6,8 +6,13 @@ body {
     align-items: center;
     background-image: url("heart-bg.jpg");
     font-family: "Pixelify Sans", sans-serif;
+    opacity: 1; 
+    transition: opacity 0.5s ease; 
+    
 }
 
+body.fade-out 
+{ opacity: 0; }
 /*Envelope Screen*/
 
 #envelope-container {
@@ -40,7 +45,7 @@ body {
 }
 
 #envelope{
-    width: 500px;
+    width: 700px;
     animation: pulse 1.5s infinite;
     cursor: pointer;
 }
@@ -91,7 +96,7 @@ body {
     text-align: center;
 
     background-image: url("window.jpg");
-    background-size: contain; /* better than contain */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -118,17 +123,18 @@ h1 {
 
 p {
     font-size: 100px;
+    margin-top: -60px;
 }
 
-/*penguin*/
+/*capybara*/
 
-.penguin {
-    width: 300px;
+.cabybara {
+    width: 250px;
     margin: 5px 0;
     transition: width 0.4s ease;
 }
 
-.letter-window.final .penguin {
+.letter-window.final .capybara {
     width: 180px;
 }
 
@@ -137,7 +143,7 @@ p {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     position: relative;
 }
 
@@ -146,14 +152,14 @@ p {
 }
 
 .btn {
-    width: 120px;
+    width: 150px;
     cursor: pointer;
     user-select: none;
 }
 
 .yes-btn, 
 .no-btn {
-    width: 120px;
+    width: 150px;
     height: auto;
     display: inline-block;
 }
@@ -173,8 +179,8 @@ p {
 }
 
 .final-text {
-    font-size: 22px;
-    line-height: 1.4;
+    font-size: 25px;
+    line-height: 1.2;
     text-align: center;
     display: inline-block;
     padding: 10px 20px;
